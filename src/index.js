@@ -111,7 +111,7 @@ function getSenderConfirmationHtml(name, email, subject, message) {
               <!-- Content -->
               <tr>
                 <td style="padding: 30px 40px; color: #333333; font-size: 16px; line-height: 1.6;">
-                  <h1 class="gradient-text" style="font-size: 24px; margin-top: 0; margin-bottom: 20px;">Thanks for contacting us, ${name}!</h1>
+                  <h1 class="gradient-text" style="font-size: 24px; margin-top: 0; margin-bottom: 20px;">Thanks for contacting me, ${name}!</h1>
                   <p style="margin-bottom: 15px;">I've successfully received your message and appreciate you reaching out.</p>
                   <p style="margin-bottom: 25px;">I will review your submission and get back to you as soon as possible if a response is needed.</p>
 
@@ -211,7 +211,7 @@ export default {
       const sendToSender = resend.emails.send({
         from: `${siteName} <noreply@${senderDomain}>`, // Consistent From name
         to: [email], // Send to the email provided in the form
-        subject: `We've Received Your Message - ${siteName}`, // Clear confirmation subject
+        subject: `I've Received Your Message - ${siteName}`, // Clear confirmation subject
         html: senderHtmlContent,
       });
 
